@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins',sans-serif;
+}
+
+body{
+    background-color:#081b29;
+    color: white;
+
+}
+
+.header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px;
+    background:transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a{
+    color:white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 1s;
+
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: black;
+}
+
+.home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.home-content{
+    max-width: 600px;  
+}
+
+.home-content h1{
+    position: relative;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h3{
+    font-size: 46px;
+    font-weight: 700;  
+    color: #00abf0;
+}
+
+.home-content p{
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+.home-content .btn-box{
+    width: 345px;
+    height: 50px;
+    /* background:white ; */
+}
+
+.btn-box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    /* z-index: 1;
+    overflow: hidden; */
+
+}
+
+.btn-box a:nth-child(2){
+    background: transparent;
+    color: #00abf0;
+}
+
+/* .btn-box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#081b29;
+    z-index: -1;
+    transition: .5s;
+
+} */
+
+/* .btn-box a:hover::before{
+width: 100%;
+
+} */
+
+.home-social{
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.home-social a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+
+}
+
+.ban-img{
+    padding-top: 150px;
+}
+
+.cont h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+    padding-bottom: 20px;
+}
+
+.pro h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+    padding-bottom: 20px;
+
+}
+
+.container{
+   display: flex;
+   grid-template-columns: repeat(3,1fr);
+   justify-content: center;
+   align-items: center;
+   grid-gap: 1rem;
+   padding: 1rem 80px;
+   font-size: 1.2rem; 
+}
+
+/* .skill-box{
+    padding: 1rem;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.skill-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+} */
+
+.skill-icon{
+    width: 50px;
+}
+
+.Contact{
+    /* background: url(./asset/subscribe-bg.png); */
+    min-height: auto;
+    padding-bottom: 4rem;
+}
+
+.Contact form{
+    max-width: 70rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.Contact form .input-box{
+position:relative;
+display: flex;
+justify-content: space-between;
+flex-wrap:wrap ;
+}
+
+.Contact form .input-box .input-field{
+    position: relative;
+    width: 49%;
+    margin:.8rem 0; 
+}
+
+.Contact form .input-box .input-field input,
+.Contact form .textarea-field textarea{
+    width: 70%;
+    height: 70%;
+    padding: .5rem;
+    font-size: 1.6rem;
+    color: #00abf0;
+    background: transparent;
+    border: .2rem solid #00abf0;
+    border-radius: .6rem;
+}
+
+.Contact form .input-box .input-field input::placeholder,
+.Contact form .textarea-field textarea::placeholder{
+    color: #00abf0;
+}
+
+/* .Contact form .textarea-field{
+    position: relative;
+    margin: .8rem 0 2.7rem;
+    display: flex;
+} */
+
+/* .Contact form .textarea-field textarea{
+resize: none;
+} */
+
+.Contact form .btn-box .btns .btn{
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    background: transparent;
+    color: #00abf0;
+    text-align: center;
+    border-radius: 5px;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.btns{
+    font-size: 18px;
+    font-weight: bold;
+    background: transparent;
+    color: #00abf0;
+    text-align: center;
+    border-radius: 5px;
+    text-transform: uppercase;
+    padding: 20px;
+
+}
+
+
+.con{
+    max-width: 50%;
+    max-height: 50%;
+}
